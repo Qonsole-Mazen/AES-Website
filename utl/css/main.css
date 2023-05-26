@@ -305,7 +305,27 @@ padding-left: 20px;}
 
 }
 /* Feed Back */
+.cards {
+width: 100%;
+display: flex;
+flex-direction: row;
 
+}
+
+.card {
+    width: 15%;
+    max-width: 200px;
+    overflow: hidden;
+    padding: 15px;
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card p , .card h4{
+    text-align: center;
+}
 
 /*  Footer  */
 
