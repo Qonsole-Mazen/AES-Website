@@ -246,10 +246,8 @@ header{
 
 /*  Services  */
 
-.services{
-     padding-top: 50px;
-}
-.services h2 span{
+
+.services h2 span ,.feeds h2 span{
     color: #07d400;
     font-weight: 800;
 }
@@ -272,7 +270,11 @@ header{
     width: 60px;
     height: 60px;
     text-align: center;
+    padding-top: 20px;
+    border-right: 1px solid #717171;
 }
+.service-item-description h3 {
+padding-left: 20px;}
 
 .service-items-group{
     max-width: 70%;
@@ -287,8 +289,21 @@ header{
 
 
 /* Clients */
+.client-items { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.client-item{
+    /* max-width: 100px; */
+    width: 14%;
+}
 
+.client-items img {
+    width: 100%;
 
+}
 /* Feed Back */
 
 
