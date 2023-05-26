@@ -310,15 +310,16 @@ padding-left: 20px;}
 width: 100%;
 display: flex;
 flex-direction: row;
-justify-content: space-between;
+justify-content: space-around;
 align-items: first baseline;
 flex-wrap: wrap;
+flex-grow: 7 ;
 
 }
 
 .card {
-    width: 15%;
-    max-width: 200px;
+    width: 20%;
+    max-width: 250px;
     overflow: hidden;
     padding: 15px;
 }
