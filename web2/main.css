@@ -45,7 +45,10 @@ header .logo i {
     background-color: #e6e6e6;
 
 }
-
+.hide{
+    display: none;
+    transition: all .5s;
+}
 .search{
     padding: 30px 15px;
 }
@@ -147,7 +150,139 @@ li .sub-list li a {
     background-color: rgba(0,0,0,0.8);
   }
 
-  .hide{
-    display: none;
-    transition: all .5s;
+  .content > div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content > div>  h2.head  {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: #42688d;
+    font-weight: 800;
+}
+
+.whoweare p ,.scope p{
+    text-align: center;
+    justify-content: left;
+    padding:  0 50px 19px ;
+}
+.cert-items {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.cert-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+}
+
+.cert-item img {
+    max-width: 100px;
+    height: auto;
+}
+
+.cert-item p{
+    color : #206cb8;
+    font-size: 22px;
+    font-weight: 600;
+}
+/*  Services  */
+
+
+.services h2 span ,.feeds h2 span{
+    color: #07d400;
+    font-weight: 800;
+}
+
+.service-items{
+    max-width: 80%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 15px;
+}
+.service-item-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.service-item-description span {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding-top: 20px;
+    border-right: 1px solid #717171;
+}
+.service-item-description h3 {
+padding-left: 20px;}
+
+.service-items-group{
+    max-width: 70%;
+    width: 50%;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.service-item{
+    padding:10px 60px;
+}
+
+
+/* Clients */
+.client-items { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.client-item{
+    /* max-width: 100px; */
+    width: 14%;
+}
+
+.client-items img {
+    width: 100%;
+
+}
+/* Feed Back */
+.cards {
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: first baseline;
+flex-wrap: wrap;
+flex-grow: 7 ;
+
+}
+
+.card {
+    width: 20%;
+    max-width: 250px;
+    overflow: hidden;
+    padding: 15px;
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card p , .card h4{
+    text-align: center;
 }
