@@ -10,11 +10,7 @@
   box-sizing: border-box;
   outline: none;
   border: none;
-  -o-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -ms-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  transition: 0.5s;
 }
 body {
   position: relative;
@@ -54,15 +50,13 @@ header i {
 /* Nav  */
 .icon {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   position: absolute;
   top: 0;
   right: 0;
-  margin: 0;
   max-width: 300px;
   padding: 0;
-  display: none !important;
+  /* display: none !important; */
   transition: 0.5s;
 }
 .nav {
@@ -80,6 +74,7 @@ header i {
 }
 
 .nav .search {
+  margin-top: 40px;
   min-width: 210px;
   height: 35px;
   background-color: #fff;
@@ -125,14 +120,12 @@ nav ul {
 }
 nav ul li {
   width: 100%;
-
   width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
 nav ul li a {
   padding: 8px 16px;
   font-size: 16px;
@@ -146,15 +139,66 @@ nav ul li a {
 nav ul li a:hover {
   background-color: var(--darksecond);
 }
-
 nav ul li i {
   font-size: 12px;
   rotate: 90deg;
 }
-nav ul li i:hover {
-  rotate: 180deg;
+nav ul li:hover i {
+  rotate: 270deg;
+}
+.opened-list {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--darksecond);
+}
+.hide {
+  display: none;
+  transition: all 0.5s;
 }
 
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.content div.item {
+  width: 100%;
+  height: auto;
+  border: 1px solid red;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.item .img {
+  max-width: 40%;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.item img {
+  width: 100%;
+  height: auto;
+}
+.item .text {
+  position: relative;
+  width: 60%;
+  min-height: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item .text h2 {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+}
 /*  For Devices */
 /* Wide Screen */
 @media screen and (min-width: 1200px) {
