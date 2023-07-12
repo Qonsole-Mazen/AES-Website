@@ -226,7 +226,7 @@ header {
 .whoweare p,
 .scope p {
   text-align: center;
-  justify-content: left;
+  text-align: justify;
   padding: 0 50px 19px;
   width: 75%;
   font-weight: 700px;
@@ -241,6 +241,7 @@ header {
 
 .cert-item {
   display: flex;
+  flex: 20%;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -361,19 +362,36 @@ footer {
 
 footer address p {
   color: #42688d;
-  font-size: 16px;
-}
-footer address span {
-  color: #42688d;
   font-size: 22px;
 }
+footer address ul {
+  margin-left: 15px;
+  font-size: 18px;
+  color: #206cb8;
+  list-style: none;
+}
+footer address ul li {
+  padding: 4px 18px;
+}
+footer address ul li:hover:not(.head) {
+  opacity: 0.7;
+}
+footer address ul li.head {
+  font-weight: 800;
+}
+footer address ul li span {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+/* 
 footer address a:hover {
   color: #42688d;
 }
 
 footer address i {
   font-size: 22px;
-}
+} */
 
 footer .copyrights p {
   color: #a3a3a3;
@@ -396,13 +414,37 @@ footer .inputs {
   align-items: center;
   justify-content: space-around;
   height: 35px;
-  padding: 5px;
+}
+.inputs button {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #07d400;
+  padding: 4px 16px;
+  border: 1px solid transparent;
+  outline: none;
+}
+footer .inputs form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 footer .inputs input {
   border: none;
-  margin: 5px;
+  height: 35px;
   width: 250px;
+  padding: 4px 16px;
 }
+footer .inputs label {
+  padding: 8px 16px;
+  text-align: center;
+  height: 35px;
+}
+footer .inputs label i {
+  color: #07d400;
+  font-size: 22px;
+}
+
 /*  For Devices */
 /* Wide Screen */
 @media screen and (min-width: 1200px) {
@@ -428,6 +470,7 @@ footer .inputs input {
     background-color: yellowgreen;
   }
 }
+
 .contactus {
   padding: 20px 10px;
   background-color: #ececec98;

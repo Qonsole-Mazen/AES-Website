@@ -17,3 +17,14 @@ function showSlides() {
 }
 
 console.log(document.body.clientWidth);
+
+const messageForm = document.forms[0];
+const newsLetterForm = document.forms[1];
+
+newsLetterForm.addEventListener('submit', function (e) {
+  e.preventDefault();
+});
+
+messageForm.addEventListener('submit', function (e) {
+  e.preventDefault();
+});
