@@ -195,10 +195,14 @@ footer .inputs input {
   width: 100%;
   color: #000;
 }
-.content .text h1 {
+.content .text h1,
+.content .text h1 span {
   font-size: 40px;
   color: #0080ff;
   text-transform: uppercase;
+}
+.content .text h1 span {
+  color: rgb(190, 0, 0);
 }
 .content .text .desciption {
   font-size: 14px;
