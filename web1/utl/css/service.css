@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: 'Manrope', sans-serif;
+}
+header {
+  padding: 5px;
+}
+.logo {
+  width: 160px;
+  height: 32px;
+  overflow: hidden;
+}
+.logo img {
+  object-fit: contain;
+  height: 30px;
+  width: 100%;
+}
+/* nav bar div 2ith 3 items  */
+.navbar {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e6e6e6;
+  border-radius: 10px;
+  padding: 0 15px;
+  /* overflow: hidden; */
+}
+.nav ul {
+  list-style: none;
+}
+.nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+.nav ul li a {
+  padding: 4px 12px;
+  display: inline-block;
+  color: #206cb8;
+  font-weight: 700;
+}
+.nav ul li:hover a {
+  color: #0080ff;
+  transition: all 0.5s;
+}
+
+/* .nav ul li i {
+  color: #206cb8;
+  font-size: 12px;
+} */
+.active {
+  border-bottom: 2px solid #0080ff;
+}
+.nav ul li:hover {
+  border-bottom: 2px solid #0080ff;
+}
+
+/*  Footer  */
+
+.footer {
+  width: 100%;
+  padding: 5px;
+}
+footer {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #e6e6e6;
+}
+
+footer address p {
+  color: #42688d;
+  font-size: 16px;
+}
+footer address span {
+  color: #42688d;
+  font-size: 22px;
+}
+footer address a:hover {
+  color: #42688d;
+}
+
+footer address i {
+  font-size: 22px;
+}
+
+footer .copyrights p {
+  color: #a3a3a3;
+  font-size: 12px;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.social i {
+  font-size: 24px;
+  color: #42688d;
+}
+
+footer .inputs {
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  justify-content: space-around;
+  height: 35px;
+  padding: 5px;
+}
+footer .inputs input {
+  border: none;
+  margin: 5px;
+  width: 250px;
+}
+/*  For Devices */
+/* Wide Screen */
+@media screen and (min-width: 1200px) {
+}
+
+/* Lap Top */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  body {
+    background-color: blue;
+  }
+}
+
+/* Tablet Devices*/
+@media screen and (max-width: 767px) {
+  body {
+    background-color: green;
+  }
+}
+
+/* Mobile Device */
+@media screen and (max-width: 480px) {
+  body {
+    background-color: yellowgreen;
+  }
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 50px;
+}
+.services .cover {
+  width: 100%;
+  overflow: hidden;
+  height: 400px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.services .cover img {
+  object-fit: contain;
+  width: 100%;
+  max-width: 1000px;
+}
+.services .item {
+  width: 95%;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.services .item > img {
+  width: 250px;
+  object-fit: cover;
+  border-radius: 0 30px 30px 0;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.services .item .content {
+  width: 60%;
+  min-height: 400px;
+  padding: 60px;
+  gap: 0;
+}
+
+.content .text {
+  width: 100%;
+  color: #000;
+}
+.content .text h1 {
+  font-size: 40px;
+  color: #0080ff;
+  text-transform: uppercase;
+}
+.content .text .desciption {
+  font-size: 14px;
+  color: #42688d;
+  font-weight: 600;
+  margin-top: -10px;
+  text-transform: uppercase;
+}
+
+.content .text .text {
+  font-size: 20px;
+  font-weight: 600;
+  width: 90%;
+  padding-top: 15px;
+  text-align: justify;
+  text-transform: capitalize;
+}
+
+.item .images {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  width: 60%;
+
+  /* align-items: center; */
+  /* justify-content: flex-start; */
+  max-height: 700px;
+}
+
+.item .images div {
+  flex: 31%;
+  overflow: hidden;
+}
+
+.item .images div img {
+  width: 95%;
+  border-radius: 15px;
+  height: auto;
+  padding: 4px;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+
+.item .images div img:hover {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Module */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 95%;
+  max-width: 100px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
