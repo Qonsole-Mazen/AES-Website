@@ -429,9 +429,9 @@ footer .inputs input {
   }
 }
 .contactus {
-  background-image: url('/utl/img/img/Image/AdobeStock_211787106_Preview.jpeg');
-  background-attachment: scroll;
   padding: 20px 10px;
+  background-color: #ececec98;
+  border-radius: 0;
 }
 .contactus form {
   display: flex;
@@ -453,10 +453,11 @@ footer .inputs input {
 .contactus form input,
 .contactus form textarea {
   width: 100%;
-  height: 35px;
+  height: 40px;
   padding: 4px 16px;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-size: 18px;
   color: #717171;
   border-radius: 8px;
   outline: none;

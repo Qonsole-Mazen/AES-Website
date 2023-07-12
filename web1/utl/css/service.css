@@ -175,7 +175,8 @@ footer .inputs input {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 10px;
+
+  margin-bottom: 25px;
 }
 .services .item > img {
   width: 250px;
@@ -270,7 +271,7 @@ footer .inputs input {
   margin: auto;
   display: block;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1000px;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
