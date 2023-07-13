@@ -63,8 +63,6 @@ header {
 
 /*  Footer  */
 
-/*  Footer  */
-
 .footer {
   width: 100%;
   padding: 5px;
@@ -76,8 +74,11 @@ footer {
   border-radius: 10px;
   padding: 15px;
   background-color: #e6e6e6;
+  flex-wrap: wrap;
 }
-
+footer > div {
+  flex: 33%;
+}
 footer address p {
   color: #42688d;
   font-size: 22px;
@@ -102,23 +103,19 @@ footer address ul li span {
   font-size: 16px;
   font-weight: 600;
 }
-/* 
-footer address a:hover {
-  color: #42688d;
+footer .copyrights {
+  flex: 100%;
+  align-items: center;
+  justify-content: center;
 }
-
-
-footer address i {
-  font-size: 22px;
-} */
-
 footer .copyrights p {
   color: #a3a3a3;
   font-size: 12px;
+  text-align: center;
 }
 .social {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
@@ -131,10 +128,22 @@ footer .inputs {
   display: flex;
   background-color: #fff;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 35px;
+  max-width: 33%;
+  flex: 30%;
 }
-.inputs button {
+footer .inputs label i {
+  color: #07d400;
+  font-size: 22px;
+}
+footer .inputs form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.inputs form button {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
@@ -142,11 +151,6 @@ footer .inputs {
   padding: 4px 16px;
   border: 1px solid transparent;
   outline: none;
-}
-footer .inputs form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 footer .inputs input {
   border: none;
@@ -158,36 +162,6 @@ footer .inputs label {
   padding: 8px 16px;
   text-align: center;
   height: 35px;
-}
-footer .inputs label i {
-  color: #07d400;
-  font-size: 22px;
-}
-
-/*  For Devices */
-/* Wide Screen */
-@media screen and (min-width: 1200px) {
-}
-
-/* Lap Top */
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  body {
-    background-color: blue;
-  }
-}
-
-/* Tablet Devices*/
-@media screen and (max-width: 767px) {
-  body {
-    background-color: green;
-  }
-}
-
-/* Mobile Device */
-@media screen and (max-width: 480px) {
-  body {
-    background-color: yellowgreen;
-  }
 }
 
 .services {
@@ -368,5 +342,121 @@ footer .inputs label i {
 @media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
+  }
+}
+/*  For Devices */
+/* Wide Screen */
+
+/* Lap Top */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .service-items {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .service-items-group {
+    flex: 100%;
+    max-width: 100%;
+    width: 90%;
+  }
+  footer {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  footer div {
+    margin-top: 25px;
+    flex: 33%;
+  }
+  footer .social {
+    flex-direction: row;
+  }
+  footer .social a {
+    padding: 15px;
+    margin: 5px;
+  }
+  footer .social a i {
+    font-size: 28px;
+  }
+  .contactus {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .contacts {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .client-item,
+  .card {
+    flex: 20%;
+  }
+}
+/* Tablet Devices*/
+@media screen and (max-width: 767px) {
+  .service-items {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .service-items-group {
+    flex: 100%;
+    max-width: 100%;
+    width: 90%;
+  }
+  footer {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  footer > div {
+    margin-top: 25px;
+    flex: 50%;
+  }
+  .contactus .contacts .phones,
+  .contactus .contacts .emails {
+    flex: 100%;
+    padding: 18px;
+    gap: 10px;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .client-item,
+  .card {
+    flex: 33%;
+  }
+}
+
+/* Mobile Device */
+@media screen and (max-width: 480px) {
+  .service-items {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .service-items-group {
+    flex: 100%;
+    max-width: 100%;
+    width: 90%;
+  }
+  footer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+  footer > div {
+    flex: 100%;
+    padding-top: 55px;
+    display: block;
+  }
+
+  .client-item,
+  .card {
+    flex: 50%;
   }
 }
