@@ -581,12 +581,6 @@ footer .inputs label {
 
 /*  For Devices */
 /* Wide Screen */
-@media screen and (min-width: 1200px) {
-  footer > div {
-    margin-top: 25px;
-    flex: 34%;
-  }
-}
 
 /* Lap Top */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -630,6 +624,10 @@ footer .inputs label {
     justify-content: center;
     align-items: center;
   }
+  .client-item,
+  .card {
+    flex: 20%;
+  }
 }
 /* Tablet Devices*/
 @media screen and (max-width: 767px) {
@@ -661,6 +659,11 @@ footer .inputs label {
     align-items: center;
     justify-content: center;
   }
+
+  .client-item,
+  .card {
+    flex: 33%;
+  }
 }
 
 /* Mobile Device */
@@ -685,5 +688,10 @@ footer .inputs label {
     flex: 100%;
     padding-top: 55px;
     display: block;
+  }
+
+  .client-item,
+  .card {
+    flex: 50%;
   }
 }
