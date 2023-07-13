@@ -476,7 +476,7 @@ footer .inputs label i {
   width: 50%;
   display: flex;
   -ms-display: flexbox;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 .contactus > p {
@@ -491,6 +491,36 @@ footer .inputs label i {
 .contactus .contacts .emails {
   flex: 50%;
   padding: 18px;
+  gap: 10px;
+  font-size: 18px;
+}
+.contactus .contacts .phones .icon,
+.contactus .contacts .emails .icon {
+  color: #0080ff;
+  font-size: 22px;
+}
+.dov {
+  padding-bottom: 15px;
+}
+.dov p.name {
+  font-size: 24px;
+  padding: 2px 14px;
+  border-bottom: 4px solid #0080ff;
+  white-space: pre;
+  display: inline-block;
+}
+.dov p.desc {
+  font-size: 14px;
+  padding: 2px 14px;
+}
+.dov p.no {
+  padding: 2px 14px;
+  font-size: 18px;
+}
+
+.emails p {
+  padding-top: 14px;
+  font-size: 22px;
 }
 
 .contactus form {
