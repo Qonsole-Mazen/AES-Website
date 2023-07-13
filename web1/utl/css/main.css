@@ -286,6 +286,7 @@ header {
 }
 .service-item-description h3 {
   padding-left: 20px;
+  text-transform: uppercase;
 }
 
 .service-items-group {
