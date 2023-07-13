@@ -175,11 +175,35 @@ footer .inputs label {
 .services .cover {
   width: 100%;
   overflow: hidden;
-  height: 400px;
+  height: 600px;
   margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url('/services/AdobeStock_540684124_Preview-transformed.jpeg');
+  background-attachment: scroll;
+  background-size: cover;
+}
+.services .cover div {
+  width: 75%;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.services .cover div p {
+  font-size: 148px;
+  color: #fffb00;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-style: italic;
+  padding: 16px;
+  stroke: 1px #0080ff;
+
+  -webkit-text-stroke-width: 6px;
+  font-family: 'Courier New', Courier, monospace;
+  -webkit-text-stroke-color: #206cb8;
 }
 .services .cover img {
   object-fit: contain;
