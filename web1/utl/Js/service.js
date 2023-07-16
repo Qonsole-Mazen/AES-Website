@@ -25,3 +25,13 @@ span.onclick = function () {
 };
 
 console.log('red');
+
+const supply = document.querySelector('.supply');
+const p = supply.querySelectorAll('.supply p.click');
+const supplyimage = supply.querySelectorAll('.supplyimgs img');
+p.forEach((el) => {
+  el.addEventListener('click', function (e) {
+    const a = document.querySelector(`.supplyimgs .${e.target.id}`);
+    a.click();
+  });
+});

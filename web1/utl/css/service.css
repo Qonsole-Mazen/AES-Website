@@ -7,6 +7,9 @@
   outline: none;
   font-family: 'Manrope', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 header {
   padding: 5px;
 }
@@ -291,6 +294,16 @@ footer .inputs label {
   cursor: pointer;
 }
 
+.supplyimgs {
+  display: none;
+}
+.click {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.click:hover {
+  transform: scale(1.05);
+}
 /* Module */
 
 /* The Modal (background) */
