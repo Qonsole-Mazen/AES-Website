@@ -389,13 +389,13 @@ footer .copyrights p {
 }
 .social {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 .social i {
-  font-size: 24px;
+  font-size: 48px;
   color: #42688d;
+  padding: 8px 16px;
 }
 
 footer .inputs {
@@ -570,6 +570,8 @@ footer .inputs label {
   }
   footer .social {
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   footer .social a {
     padding: 15px;
