@@ -180,7 +180,7 @@ footer .inputs label {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('/services/AdobeStock_540684124_Preview-transformed.jpeg');
+  background-image: url('../../services/AdobeStock_540684124_Preview-transformed.jpeg');
   background-attachment: scroll;
   background-size: cover;
 }
