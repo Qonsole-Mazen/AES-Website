@@ -493,6 +493,16 @@ footer .inputs label {
 .emails p {
   padding-top: 14px;
   font-size: 22px;
+  transition: all 0.5s;
+}
+.emails a,
+.dov p a {
+  color: black;
+  transition: all 0.3s;
+}
+.emails p:hover a,
+.dov p:hover a {
+  color: #206cb8;
 }
 
 .contactus form {
