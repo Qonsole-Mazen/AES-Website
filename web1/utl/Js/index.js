@@ -28,3 +28,15 @@ newsLetterForm.addEventListener('submit', function (e) {
 messageForm.addEventListener('submit', function (e) {
   e.preventDefault();
 });
+
+const submenus = document.querySelectorAll('.subnav');
+
+console.log(submenus);
+submenus.forEach((el) => {
+  el.addEventListener('click', (e) => {
+    const ul = e.target.parentElement.querySelector('ul');
+    if (!ul) return;
+    ul.classList.toggle('submenu-open');
+    e.target.parentElement.classList.toggle('open');
+  });
+});
